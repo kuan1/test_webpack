@@ -13,5 +13,10 @@ function component() {
 
   return element;
 }
-
+if (module.hot) {
+  module.hot.accept('./print.js', () => {
+    console.log('Accept the updated print module!');
+    print();
+  })
+}
 document.body.appendChild(component());

@@ -1,3 +1,6 @@
 export default function print() {
-  console.log('这是打印内容3');
+  let element = document.createElement('div');
+  element.innerHTML = '文件发生改变234';
+
+  document.body.appendChild(element);
 }
