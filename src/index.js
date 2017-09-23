@@ -1,4 +1,5 @@
 import _ from 'lodash';
+import print from './print.js';
 
 function component() {
   let element = document.createElement('div');
